@@ -1,0 +1,35 @@
+nav{
+    background-color: #5D455F
+}
+body{
+    background-color: #B29ABF;
+    width: 90%;
+}
+footer{
+    background-color: #5D455F;
+}
+h1{
+    color: #5D455F;
+}
+p{
+    color: #5D455F;
+}
+button{
+    background-color: #B29ABF;
+    color: #5D455F;
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.2s, color 0.2s;
+    font-weight: 600;
+}
+
+button:hover{
+    background-color: #5D455F;
+    color: #B29ABF;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none;
+}
