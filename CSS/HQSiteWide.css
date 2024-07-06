@@ -1,18 +1,62 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+@font-face {
+    font-family: judsonitalic;
+    src: url(../Assets/Fonts/Judson/Judson-Italic.ttf);
+}
+
+@font-face {
+    font-family: judson;
+    src: url(../Assets/Fonts/Judson/Judson-Regular.ttf);
+}
 nav{
-    background-color: #5D455F
+    background-color: #5D455F;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+}
+nav div{
+    flex-grow: 1;
+}
+nav h1{
+    color: #B29ABF;
+    font-family: judsonitalic;
+    
+    margin-left: 0.5rem;
+}
+nav img{
+    min-width: 1.2rem;
+    max-height: 1.2rem;
+    padding-left: 1rem;
+}
+nav a{
+    text-decoration: none;
+    color: #B29ABF;
+    font-family: judson;
 }
 body{
     background-color: #B29ABF;
-    width: 90%;
+    width: 100%;
 }
 footer{
     background-color: #5D455F;
 }
 h1{
+    font-size: 3rem;
+    color: #5D455F;
+}
+h2{
+    font-size: 2rem;
     color: #5D455F;
 }
 p{
     color: #5D455F;
+    margin-left: 1rem;
+    font-size: 1rem;
 }
 button{
     background-color: #B29ABF;
@@ -32,4 +76,93 @@ button:hover{
 
 a{
     text-decoration: none;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    color: #B29ABF;
+}
+
+footer img{
+    min-width: 1.2rem;
+    max-height: 1.2rem;
+}
+
+@keyframes slide {
+from{
+    transform: translateX(0);
+}
+    
+to{
+    transform: translateX(-100%);
+}
+
+}
+
+.carasol{
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.carasolContainer{
+    display: inline-block;
+    animation: 15s slide infinite linear;
+}
+
+.carasolContainer img{
+    height: 40rem;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 2px solid red;
+}
+
+.about > *{
+    outline: 2px solid greenyellow;
+}
+.robin{
+    display: relative;
+    width:14%;
+    left: 20px;
+    height: auto;
+}
+
+.Countdown{
+    display: relative;
+    width:28%;
+    height: auto;
+}
+
+.Layers{
+    display: relative;
+    width:28%;
+    height: auto;
+}
+
+.offeredServices{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.services{
+    display: grid;
+    width: 80%;
+    grid-template-columns: auto auto auto;
+}
+
+.services > *{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
