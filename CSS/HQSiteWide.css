@@ -22,6 +22,9 @@ nav{
 nav div{
     flex-grow: 1;
 }
+nav p{
+    margin-left: 1rem;
+}
 nav h1{
     color: #B29ABF;
     font-family: judsonitalic;
@@ -37,6 +40,14 @@ nav a{
     text-decoration: none;
     color: #B29ABF;
     font-family: judson;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+form > *{
+    width: 12%;
+    margin: 0.165rem;
 }
 body{
     background-color: #B29ABF;
@@ -55,14 +66,25 @@ h2{
 }
 p{
     color: #5D455F;
-    margin-left: 1rem;
     font-size: 1rem;
+}
+label{
+    color: #5D455F;
+    font-size: 1rem;
+    font-weight: 700;
+}
+input{
+    color: #D7D7D7;
+    border-radius: 5px;
+    border: none;
+    min-height: 1.25rem;
+    margin-bottom: 1rem;
 }
 button{
     background-color: #B29ABF;
     color: #5D455F;
     border: none;
-    border-radius: 50px;
+    border-radius: 30px;
     transition: background-color 0.2s, color 0.2s;
     font-weight: 600;
 }
@@ -155,9 +177,8 @@ to{
 }
 
 .services{
-    display: grid;
-    width: 80%;
-    grid-template-columns: auto auto auto;
+    display: flex;
+    align-content: space-between;
 }
 
 .services > *{
@@ -165,4 +186,13 @@ to{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.servicePara{
+    margin: 0.75rem;
+    width: 50ch;
+}
+
+.serviceContainer{
+    margin-top: 1rem;
 }
