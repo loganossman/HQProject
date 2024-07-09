@@ -14,8 +14,8 @@
         <p><a href="HQService.html">Works</a></p>
         <p><a href="HQAbout.html">About</a></p>
         <p><a href="HQContact.html">Contact</a></p>
-        <img src="../Assets/Icons/4691478_patreon_icon.png">
-        <img src="../Assets/Icons/instagram_icon.png">
+        <img class= "icon" src="../Assets/Icons/4691478_patreon_icon.png">
+        <img class="icon lastIcon" src="../Assets/Icons/instagram_icon.png">
     </nav>
     <div class="carasol">
         <div class="carasolContainer">
@@ -33,11 +33,11 @@
             <img class = "carFour" src="../Assets/HandMade/Countdown No.1.jpg">
         </div>
     </div>
-    <div class="about">
+    <div class="about container">
         <!--Div the about content. button leads to HQAbout-->
         <div class="AboutPara">
-            <h1>Hannah Quay</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+            <h1 style="padding-left: 20%;">Hannah Quay</h1>
+            <p style="width: 66%; padding-left: 20%;">Lorem ipsum dolor sit amet, consectetur adipiscing 
                 elit, sed do eiusmod tempor incididunt ut labore
                 et dolore magna aliqua. Ut enim ad minim veniam, 
                 quis nostrud exercitation ullamco laboris nisi ut 
@@ -46,15 +46,15 @@
                 eu fugiat nulla pariatur. Excepteur sint occaecat 
                 cupidatat non proident, sunt in culpa qui officia 
                 deserunt mollit anim id est labo...</p>
-            <button>See More</button>
+            <button style="margin-left: 20%;">See More</button>
         </div>
-        <div class="AboutPictures">
+        <div class="AboutPictures">            
             <img class="robin" src = "../Assets/DigitalArt/Word Portrait- Robin Williams.jpg">
-            <img class="Countdown"src = "../Assets/HandMade/Countdown No.4.jpg">
             <img class="Layers"src = "../Assets/HandMade/Layers.jpg">
+            <img class="Countdown"src = "../Assets/HandMade/Countdown No.4.jpg">
         </div>
     </div>
-    <div class="offeredServices">
+    <div class="offeredServices container">
         <!--Div containing the offered services, button leads to HQService-->
         <h1>Offered Services</h1>
     <div class="services">
@@ -82,9 +82,10 @@
     </div>
         <button>See More</button>
     </div>
-    <div>
+    <div class="container contactContainer">
         <!--Div containing the contact form, button submits email to HQ's Email-->
-        <div>
+        <h1>Contact Me</h1>
+        <div class="contact">
             <form>
                 <label>Name</label>
                 <input type="text">
@@ -93,24 +94,21 @@
                 <label>Subject</label>
                 <input type="text">
                 <label>Message</label>
-                <input type="text">
+                <input class = "messageInput" type="text">
             </form>
+            <p class="disclaimer">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna 
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+            </p>
         </div>
-        <p class="disclaimer">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna 
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-            ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit 
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-            occaecat cupidatat non proident, sunt in culpa qui officia 
-            deserunt mollit anim id est laborum
-        </p>
         <button>Submit</button>
     </div>
     <footer>
-        <img src="../Assets/Icons/4691478_patreon_icon.png">
-        <img src="../Assets//Icons//instagram_icon.png">
+        <div class="iconHolder">
+            <img class= "icon" src="../Assets/Icons/4691478_patreon_icon.png">
+            <img class= "icon" src="../Assets//Icons//instagram_icon.png">
+        </div>
         <p>Hannah Quay. All Rights Reserved</p>    
     </footer>
 </body>

@@ -8,32 +8,44 @@
 </head>
 <body>
     <nav>
-        <h1>HQ</h1>
-        <p><a href="../Assets/HQService/">Works</a></p>
-        <p><a href="../Assets/HQAbout/">About</a></p>
-        <p><a href="../Assets/HQContact/">Contact</a></p>
-        <img src="../Assets/Icons/4691478_patreon_icon.png">
-        <img src="../Assets/Icons/instagram_icon.png">
+        <div>
+            <h1>HQ</h1>
+        </div>
+        <p><a href="HQService.html">Works</a></p>
+        <p><a href="HQAbout.html">About</a></p>
+        <p><a href="HQContact.html">Contact</a></p>
+        <img class= "icon" src="../Assets/Icons/4691478_patreon_icon.png">
+        <img class="icon lastIcon" src="../Assets/Icons/instagram_icon.png">
     </nav>
     <h1>
         Looking forward to hearing from you
     </h1>
-    <div>
-        <form>
-            <label>Name</label>
-            <input type="text">
-            <label>Address</label>
-            <input type="text">
-            <label>Subject</label>
-            <input type="text">
-            <label>Message</label>
-            <input type="text">
-        </form>
-        <p>Feel free to contact me at <a href="mailto:hannahquay01@gmail.com">hannahquay01@gmail.com</a></p>
+    <div class="container contactContainer">
+        <!--Div containing the contact form, button submits email to HQ's Email-->
+        <div class="contact">
+            <form>
+                <label>Name</label>
+                <input type="text">
+                <label>Address</label>
+                <input type="text">
+                <label>Subject</label>
+                <input type="text">
+                <label>Message</label>
+                <input class = "messageInput" type="text">
+            </form>
+            <p class="disclaimer">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna 
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+            </p>
+        </div>
+        <button>Submit</button>
     </div>
     <footer>
-        <img src="../Assets/Icons/4691478_patreon_icon.png">
-        <img src="../Assets//Icons//instagram_icon.png">
+        <div class="iconHolder">
+            <img class= "icon" src="../Assets/Icons/4691478_patreon_icon.png">
+            <img class= "icon" src="../Assets//Icons//instagram_icon.png">
+        </div>
         <p>Hannah Quay. All Rights Reserved</p>    
     </footer>
 </body>

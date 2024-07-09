@@ -55,9 +55,12 @@ body{
 }
 footer{
     background-color: #5D455F;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
 }
 h1{
-    font-size: 3rem;
+    font-size: 3.75rem;
     color: #5D455F;
 }
 h2{
@@ -66,27 +69,31 @@ h2{
 }
 p{
     color: #5D455F;
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 label{
     color: #5D455F;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 700;
 }
 input{
-    color: #D7D7D7;
+    background-color: #D7D7D7;
     border-radius: 5px;
     border: none;
-    min-height: 1.25rem;
+    min-height: 1.5rem;
     margin-bottom: 1rem;
+    width: 33%;
 }
 button{
     background-color: #B29ABF;
     color: #5D455F;
-    border: none;
-    border-radius: 30px;
+    border: 1px solic #5D455F;
+    border-radius: 0px;
     transition: background-color 0.2s, color 0.2s;
+    font-size: 1.25rem;
     font-weight: 600;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
 button:hover{
@@ -133,40 +140,57 @@ to{
 
 .carasolContainer{
     display: inline-block;
-    animation: 15s slide infinite linear;
+    animation: 18s slide infinite linear;
 }
 
 .carasolContainer img{
-    height: 40rem;
+    height: 45rem;
 }
 
 .about{
     display: flex;
     align-items: center;
     justify-content: center;
-    outline: 2px solid red;
+    align-content: center;
 }
 
 .about > *{
-    outline: 2px solid greenyellow;
+}
+.AboutPara{
+    width: 50%;
+}
+.AboutPictures{
+    min-height: 100%;
+    max-width: 50%;
 }
 .robin{
-    display: relative;
-    width:14%;
-    left: 20px;
-    height: auto;
+    z-index: 0;
+    position: relative;
+    width:13%;
+    max-width: 13%;
+    min-height: 50%;
+    left: 20%;
 }
 
 .Countdown{
-    display: relative;
-    width:28%;
-    height: auto;
+    z-index: 2;
+    position: relative;
+    top: -10px;
+    left: -70px;
+    width:27%;
+    max-width: 27%;
+    min-height: 50%;
 }
 
 .Layers{
-    display: relative;
-    width:28%;
-    height: auto;
+    z-index: 1;
+    position: relative;
+    width:33%;
+    max-width: 33%;
+    min-height: 33%;
+    top: 30px;
+    left: -30px;
+    left: 11%;
 }
 
 .offeredServices{
@@ -195,4 +219,39 @@ to{
 
 .serviceContainer{
     margin-top: 1rem;
+}
+
+.container{
+    margin-top: 5rem;
+}
+.contactContainer{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact{
+    position: relative;
+    width: 50%;
+}
+.messageInput{
+    width: 97%;
+    min-height: 4.75rem;
+}
+.disclaimer{
+    position: absolute;
+    width: 60%;
+    top: 0px;
+    right: 0px;
+}
+
+.lastIcon{
+    margin-right: 3%;
+}
+
+
+.iconHolder{
+    margin: 0.5% 0 0.25% 0;
 }
