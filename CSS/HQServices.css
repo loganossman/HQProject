@@ -1,0 +1,11 @@
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.spotlightImage{
+    width: 25%;
+    aspect-ratio: 1/1;
+}

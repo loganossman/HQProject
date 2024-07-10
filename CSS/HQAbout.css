@@ -1,0 +1,19 @@
+.horizontalContainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.AboutPicture{
+    min-height: 60%;
+    max-width: 25%;
+    aspect-ratio: 1/1.2;
+}
+
+.sectionHeader{
+    text-align: center;
+}
+
+.aboutPara{
+    margin-top: 1rem;
+    line-height: 1.75rem;
+}
