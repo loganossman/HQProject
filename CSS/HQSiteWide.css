@@ -100,6 +100,7 @@ button:hover{
     background-color: #5D455F;
     color: #B29ABF;
     border-radius: 50px;
+    border: none;
     font-weight: 600;
 }
 
@@ -154,8 +155,6 @@ to{
     align-content: center;
 }
 
-.about > *{
-}
 .AboutPara{
     width: 50%;
 }
@@ -235,6 +234,7 @@ to{
 .contact{
     position: relative;
     width: 50%;
+    margin-top: 0.5rem;
 }
 .messageInput{
     width: 97%;
