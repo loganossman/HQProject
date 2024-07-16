@@ -7,4 +7,11 @@ footer{
 
 .overrideContainer{
     margin-top: 3rem;
+    min-height: 100%;
+    margin-bottom: 3rem;
+}
+
+.contactHeader{
+    text-align: center; 
+    width: 50%;
 }
