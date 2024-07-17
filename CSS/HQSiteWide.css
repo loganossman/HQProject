@@ -241,6 +241,7 @@ to{
 .messageInput{
     width: 97%;
     min-height: 4.75rem;
+    background-color: #D7D7D7;
 }
 .disclaimer{
     position: absolute;
