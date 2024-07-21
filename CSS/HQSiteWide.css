@@ -62,6 +62,7 @@ footer{
 h1{
     font-size: 3.75rem;
     color: #5D455F;
+    white-space: nowrap;
 }
 h2{
     font-size: 2rem;
@@ -165,8 +166,8 @@ to{
 .robin{
     z-index: 0;
     position: relative;
-    width:13%;
-    max-width: 13%;
+    width:19%;
+    max-width: 19%;
     min-height: 50%;
     left: 20%;
 }
@@ -176,17 +177,17 @@ to{
     position: relative;
     top: -10px;
     left: -70px;
-    width:27%;
-    max-width: 27%;
+    width:33%;
+    max-width: 33%;
     min-height: 50%;
 }
 
 .Layers{
     z-index: 1;
     position: relative;
-    width:33%;
-    max-width: 33%;
-    min-height: 33%;
+    width:44%;
+    max-width: 44%;
+    min-height: 44%;
     top: 30px;
     left: -30px;
     left: 11%;
@@ -197,6 +198,7 @@ to{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .services{
@@ -213,7 +215,7 @@ to{
 
 .servicePara{
     margin: 0.75rem;
-    width: 50ch;
+    width: 90%;
 }
 
 .serviceContainer{
@@ -239,6 +241,7 @@ to{
 .messageInput{
     width: 97%;
     min-height: 4.75rem;
+    background-color: #D7D7D7;
 }
 .disclaimer{
     position: absolute;
@@ -254,4 +257,46 @@ to{
 
 .iconHolder{
     margin: 0.5% 0 0.25% 0;
+}
+
+@media all and (max-width: 700px){
+    h1{
+        font-size: 3.25rem;
+    }
+    h2{
+        font-size: 1.75rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    .services{
+        flex-direction: column;
+    }
+    .contact{
+        width: 80%;
+    }
+    .carasolContainer img{
+        height: 40rem;
+    }
+    .AboutPictures{
+        margin-right: 5%;
+    }
+    .robin{
+        width:25%;
+        max-width: 25%;
+    }
+
+    .Countdown{
+        width:39%;
+        max-width: 39%;
+        min-height: 50%;
+        top: -90px;
+        left: 55%;
+    }
+
+    .Layers{
+        width:50%;
+        max-width: 50%;
+        min-height: 50%;
+    }
 }

@@ -19,20 +19,24 @@
         <img class="icon lastIcon" src="../Assets/Icons/instagram_icon.png">
     </nav>
     <div class="overrideContainer contactContainer">
-        <h1 style="text-align: center; width: 50%;">
-            Looking forward to hearing from you
+        <div>
+        <h1 class="contactHeader">
+            Contact Me
         </h1>
+        </div>
         <!--Div containing the contact form, button submits email to HQ's Email-->
         <div class="overrideContainer contact">
-            <form>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="ce485a09-145b-46f1-b0c7-b00c14487c56">
                 <label>Name</label>
-                <input type="text">
-                <label>Address</label>
-                <input type="text">
-                <label>Subject</label>
-                <input type="text">
+                <input type="text" name="name" required>
+                <label>Email</label>
+                <input type="text" name="address" required>
                 <label>Message</label>
-                <input class = "messageInput" type="text">
+                <textarea class="messageInput"name="message" required></textarea>
+                <div style="border: 1px solid red;">
+                    <button type="submit">Submit Form</button>
+                </div>
             </form>
             <p class="disclaimer">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -40,12 +44,11 @@
                 aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
             </p>
         </div>
-        <button>Submit</button>
     </div>
     <footer>
         <div class="iconHolder">
             <img class= "icon" src="../Assets/Icons/4691478_patreon_icon.png">
-            <img class= "icon" src="../Assets//Icons//instagram_icon.png">
+            <a href="https://www.instagram.com/hannahquaydrawings?igsh=azI2bWtoZ2I4M28y"><img class= "icon" src="../Assets//Icons//instagram_icon.png" ></a>
         </div>
         <p>Hannah Quay. All Rights Reserved</p>    
     </footer>
