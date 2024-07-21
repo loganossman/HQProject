@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <title></title>
     <link rel="stylesheet" href="../CSS/HQSiteWide.css">
+    <link rel="stylesheet" href="../CSS/HQGallery.css">
 </head>
 <body>
     <nav>
@@ -17,15 +18,37 @@
         <img class= "icon" src="../Assets/Icons/4691478_patreon_icon.png">
         <img class="icon lastIcon" src="../Assets/Icons/instagram_icon.png">
     </nav>
-    <h1>
-        Digital Art Gallery
-    </h1>
-    <footer>
+    <div  style="text-align: center; margin-top: 2rem;">
+        <h1>
+            Hand Drawn Art Gallery
+        </h1>
+    </div>
+    <div class="digitalGridContainer">
+        <div class="gridCell" onclick = "reverseTest(this, digitalPiece1)">
+            <img src="../Assets/DigitalArt/Brandy.jpg">
+        </div>
+        <div class="gridCell" onclick = "reverseTest(this, digitalPiece1)">
+            <img src="../Assets/DigitalArt/Cartoonish Self portrait.jpg">
+        </div>
+        <div class="gridCell" onclick = "reverseTest(this, digitalPiece1)">
+            <img src="../Assets/DigitalArt/Word Portrait- Robin Williams.jpg">
+        </div>
+        <div class="gridCell" onclick = "reverseTest(this, digitalPiece1)">
+            <img src="../Assets/HandMade/Bust No.3.jpg">
+        </div>
+        <div class="gridCell" onclick = "reverseTest(this, digitalPiece1)">
+            <img src="../Assets/HandMade/Bust No.4.jpg">
+        </div>
+    </div>
+
+    <footer class="digitalFooter">
         <div class="iconHolder">
             <img class= "icon" src="../Assets/Icons/4691478_patreon_icon.png">
-            <img class= "icon" src="../Assets//Icons//instagram_icon.png">
+            <a href="https://www.instagram.com/hannahquaydrawings?igsh=azI2bWtoZ2I4M28y"><img class= "icon" src="../Assets//Icons//instagram_icon.png" ></a>
         </div>
         <p>Hannah Quay. All Rights Reserved</p>    
     </footer>
 </body>
+<script src="../JavaScript/gallery.js"></script>
+<script src="../JavaScript/artPiece.js"></script>
 </html>
