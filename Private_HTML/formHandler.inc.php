@@ -6,7 +6,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     try {
         require_once "db.inc.php";
-        $query = "INSERT INTO administrator (username, pass) VALUES (?, ?);";
+        $query = "INSERT INTO administrator (username, password) VALUES (?, ?);";
 
         $stmt = $pdo->prepare($query);
 
