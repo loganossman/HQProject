@@ -10,10 +10,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
         $stmt = $pdo->prepare($query);
 
-        $stmt->execute($username, $password);
+        $stmt->execute([$username, $password]);
 
         $pdo = null;
         $stmt = null;
+
+        console.log($username . " " . $password);
+
+        sleep(5);
 
         header("Location: ../Public_HTML/HQLogin.html");
 
@@ -25,5 +29,4 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 }
 else{
     header("Location: ../Public_HTML/HQLogin.html");
-    echo("It didn't work");
 }
