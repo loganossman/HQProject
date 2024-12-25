@@ -1,25 +1,26 @@
 <?php
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
-    $username = $_POST["username"];
-    $password = $_POST["pass"];
+    $artimage = $_POST["artimage"];
+    $name = $_POST["name"];
+    $description = $_POST["description"];
+    $medium = $_POST["medium"];
+    $size = $_POST["size"];
+    $date = $_POST["date"];
+
 
     try {
         require_once "db.inc.php";
-        $query = "INSERT INTO administrator (username, password) VALUES (?, ?);";
+        $query = "INSERT INTO pieces (artimage, name, description, medium, size, date) VALUES (?, ?, ?, ?, ?, ?);";
 
         $stmt = $pdo->prepare($query);
 
-        $stmt->execute([$username, $password]);
+        $stmt->execute([$artimage, $name, $description, $medium, $size, $date]);
 
         $pdo = null;
         $stmt = null;
 
-        console.log($username . " " . $password);
-
-        sleep(5);
-
-        header("Location: ../Public_HTML/HQLogin.html");
+        header("Location: ../Public_HTML/HQAbout.html");
 
         die();
 
