@@ -1,14 +1,14 @@
 <?php
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
-    $artimage = $_FILES["artimage"]["name"];
-    $artImageTemp = $_FILES["artImage"]["tmp_name"];
+    $artimage = $_FILES["artimage"]['name'];
+    $artImageTemp = $_FILES['artimage']['tmp_name'];
     $name = $_POST["name"];
     $description = $_POST["description"];
     $medium = $_POST["medium"];
     $size = $_POST["size"];
     $date = $_POST["date"];
-    $folder = '../Assets/TestFolder/'.$artImage;
+    $folder = '../Assets/TestFolder/'.$artimage;
 
 
     try {
@@ -23,10 +23,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $stmt = null;
 
         if(move_uploaded_file($artImageTemp, $folder)){
-            header("Location: ../Public_HTML/HQAbout.html");
+            header("Location: ../Public_HTML/loginHandler.html");
         }
         else{
-            die("Failed". $folder);
+            die("".count($_FILES));
         }
         
 

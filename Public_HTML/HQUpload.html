@@ -10,14 +10,14 @@
         <h1>
             Enter your Stuff
         </h1>
-        <form action="../Private_HTML/formHandler.inc.php" method="post" enctype="multipart/form-data">
-            <input type = "file" name="artimage" placeholder="artimage">
+        <form action="../Private_HTML/formHandler.inc.php" method="POST" enctype="multipart/form-data">
             <input type = "text" name="name" placeholder="name">
+            <input type = "file" name="artimage" placeholder="artimage">
             <input type = "text" name="medium" placeholder="medium">
             <input type = "text" name="size" placeholder="size">
             <input type = "text" name="date" placeholder="date">
             <input type = "text" name="description" placeholder="description">
-            <button>Done</button>
+            <button type="submit">Done</button>
         </form>
     </body>
 </html>
