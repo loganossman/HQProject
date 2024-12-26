@@ -8,6 +8,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $medium = $_POST["medium"];
     $size = $_POST["size"];
     $date = $_POST["date"];
+    $dropdown = $_POST["style"];
     $folder = '../Assets/TestFolder/'.$artimage;
 
 
@@ -23,7 +24,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $stmt = null;
 
         if(move_uploaded_file($artImageTemp, $folder)){
-            header("Location: ../Public_HTML/loginHandler.html");
+            if($dropdown = "Hand Made"){
+                header("Location: ../Public_HTML/HQLogin.html");
+            } elseif($dropdown = "Digital"){
+                header("Location: ../Public_HTML/HQAbout.html");
+            } else{
+                die("Both are wrong");
+            }
         }
         else{
             die("".count($_FILES));
