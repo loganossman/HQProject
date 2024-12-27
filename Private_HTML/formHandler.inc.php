@@ -9,7 +9,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $size = $_POST["size"];
     $date = $_POST["date"];
     $dropdown = $_POST["style"];
-    $folder = '../Assets/TestFolder/'.$artimage;
+    $folder = '';
+    if($dropdown == "Hand Made"){
+        $folder = '../Assets/NewHandMade/'.$artimage;
+    } elseif($dropdown == "Digital"){
+        $folder = '../Assets/NewDigitalArt/'.$artimage;
+    } else{
+        die("Both are wrong");
+    }
+    
 
 
     try {
@@ -24,19 +32,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $stmt = null;
 
         if(move_uploaded_file($artImageTemp, $folder)){
-            if($dropdown = "Hand Made"){
-                header("Location: ../Public_HTML/HQLogin.html");
-            } elseif($dropdown = "Digital"){
-                header("Location: ../Public_HTML/HQAbout.html");
-            } else{
-                die("Both are wrong");
-            }
+            header("Location: ../Public_HTML/HQUpload.html");
         }
         else{
-            die("".count($_FILES));
+            die("Whoopsie Doopsie, no file included!");
         }
         
-
         die();
 
     } catch (PDOException $e) {

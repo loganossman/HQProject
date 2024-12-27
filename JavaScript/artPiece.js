@@ -6,7 +6,7 @@ function artPiece(name, description, medium, size, date){
     this.date = date;
 }
 
-let bustDescription = " I started this mini series as an assignment for my degree. As time went on, I continued with it during the beginning of covid as a way to bring some joy to myself and others during trying times, and to also experiment with materials unrelated to pencil and paper.";
+let bustDescription = "I started this mini series as an assignment for my degree. As time went on, I continued with it during the beginning of covid as a way to bring some joy to myself and others during trying times, and to also experiment with materials unrelated to pencil and paper.";
 let countdownDescription = "I made these pieces as a continuation of making art on the topic of epilepsy. As someone who has epilepsy, and still struggles with it to this day, I created this mini series as a way to in layman's terms “put someone in my shoes”. Even though I am medicated and everything is under control, there is still that lingering feeling that I might have an episode at any time.";
 let colorFigureDescription = " I wanted to explore with color more and work with materials, so these works are just experimentations of movement, color and how to move beyond just black and white.";
 

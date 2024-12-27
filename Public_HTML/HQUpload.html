@@ -7,21 +7,23 @@
         <link rel="stylesheet" href="../CSS/HQSiteWide.css">
     </head>
     <body>
+        <div class="overrideContainer contact">
         <h1>
             Enter your Stuff
         </h1>
         <form action="../Private_HTML/formHandler.inc.php" method="POST" enctype="multipart/form-data">
-            <input type = "text" name="name" placeholder="name">
-            <input type = "file" name="artimage" placeholder="artimage">
-            <input type = "text" name="medium" placeholder="medium">
-            <input type = "text" name="size" placeholder="size">
-            <input type = "text" name="date" placeholder="date">
-            <input type = "text" name="description" placeholder="description">
-            <datalist name = "style">
-                <option value = "Hand Made">
-                <option value = "Digital">
-            </datalist>
+            <input type = "text" name="name" placeholder="name" required>
+            <input type = "file" name="artimage" placeholder="artimage" required>
+            <input type = "text" name="medium" placeholder="medium" required>
+            <input type = "text" name="size" placeholder="size" required>
+            <input type = "text" name="date" placeholder="date" required>
+            <textarea type = "text" name="description" class="messageInput" placeholder="description"></textarea>
+            <select name = "style" id="style" required>
+                <option value = "Digital">Digital</option>
+                <option value = "Hand Made">Hand Made</option>
+            </select>
             <button type="submit">Done</button>
         </form>
+    </div>
     </body>
 </html>
