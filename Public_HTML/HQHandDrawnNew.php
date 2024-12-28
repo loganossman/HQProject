@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<script src="../JavaScript/artPieceGenerator.js"></script>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="../CSS/HQGallery.css">
 </head>
 <body>
+    <script>
+        /*for(const element of egg){
+            console.log(element);
+        }*/
+    </script>
     <nav>
         <div>
             <a href="HQHomePage.html"><h1>HQ</h1></a>
@@ -23,10 +28,27 @@
             Hand Drawn Art Gallery
         </h1>
     </div>
+
     <div class="gridContainer">
-        <div class="gridCell" onclick = "reverseTest(this, artPiece1)">
-            <img src="../Assets/HandMade/Bust No.1.jpg">
-        </div>
+        <?php
+            require_once "../Private_HTML/loadHandler.inc.php";
+            $increment = 0;
+            foreach ($result as $x){
+                $m = "../Assets/NewHandMade/". $x['artimage'];
+                $n = $x['name'];
+                $o = $x['description'];
+                $p = $x['date'];
+                $q = $x['medium'];
+                $r = $x['date'];
+                echo "<script>
+                            artCollectionLoad('$n','$o','$p','$q','$r');
+                      </script> 
+                      <div class='gridCell' onclick = 'reverseTest(this, getArtCollection($increment))'>
+                         <img class=icon src='$m'>
+                      </div>";
+                $increment += 1;
+            }
+        ?>
         <footer class="footer">
             <div class="iconHolder">
                 <img class= "icon" src="../Assets/Icons/4691478_patreon_icon.png">

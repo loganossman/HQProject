@@ -1,20 +1,14 @@
+
 <?php
-
-if($_SERVER["REQUEST_METHOD"] == "POST"){
-    $username = $_POST["username"];
-    $password = $_POST["pass"];
-
-    try {
+try {
         require_once "db.inc.php";
-        $query = "SELECT * FROM administrator WHERE username = :username;";
+        $query = "SELECT artimage, name, description, medium, size, date FROM pieces;";
 
         $stmt = $pdo->prepare($query);
 
-        $stmt->bindParam(":username", $username);
-
         $stmt->execute();
 
-        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         $string = "";
 
@@ -28,14 +22,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $pdo = null;
         $stmt = null;
 
-        header($string);
-
-        die();
-
     } catch (PDOException $e) {
         die("Query Failerd: ". $e->getMessage());
     }
-}
-else{
-    header("Location: ../Public_HTML/HQLogin.html");
-}

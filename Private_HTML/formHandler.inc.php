@@ -27,7 +27,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $stmt = $pdo->prepare($query);
 
         $stmt->execute([$artimage, $name, $description, $medium, $size, $date]);
-
+        
         $pdo = null;
         $stmt = null;
 
