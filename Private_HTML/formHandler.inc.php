@@ -10,10 +10,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $date = $_POST["date"];
     $dropdown = $_POST["style"];
     $folder = '';
+    $table = '';
     if($dropdown == "Hand Made"){
         $folder = '../Assets/NewHandMade/'.$artimage;
+        $table = 'pieces';
     } elseif($dropdown == "Digital"){
         $folder = '../Assets/NewDigitalArt/'.$artimage;
+        $table = 'digitalpieces';
     } else{
         die("Both are wrong");
     }
@@ -22,8 +25,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     try {
         require_once "db.inc.php";
-        $query = "INSERT INTO pieces (artimage, name, description, medium, size, date) VALUES (?, ?, ?, ?, ?, ?);";
-
+        if($table == "pieces"){
+            $query = "INSERT INTO pieces (artimage, name, description, medium, size, date) VALUES (?, ?, ?, ?, ?, ?);";
+        }else{
+            $query = "INSERT INTO digitalpieces (artimage, name, description, medium, size, date) VALUES (?, ?, ?, ?, ?, ?);";
+        }
         $stmt = $pdo->prepare($query);
 
         $stmt->execute([$artimage, $name, $description, $medium, $size, $date]);
