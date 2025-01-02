@@ -203,7 +203,6 @@ to{
 
 .services{
     display: flex;
-    align-content: space-between;
 }
 
 .services > *{

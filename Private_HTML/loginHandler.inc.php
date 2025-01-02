@@ -19,7 +19,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $string = "";
 
         if($result == true){
-            $string = "Location: ../Public_HTML/HQAbout.html";
+            $string = "Location: ../Public_HTML/HQUpload.html";
         }
         else{
             $string = "Location: ../Public_HTML/HQLogin.html";

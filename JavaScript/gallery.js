@@ -1,4 +1,4 @@
-let reverseTest = function(a, artObject){
+let reverseTest = function(a, artObject, name){
     //Code Goes Here... Eventually. Let us cook.
     if(document.querySelector(".aboutSection") != null){
         test();
@@ -22,6 +22,7 @@ let reverseTest = function(a, artObject){
     newDiv.appendChild(aboutDate);    
     a.classList.replace("gridCell", "gridAbout");
     a.appendChild(newDiv);
+    console.log(Object.keys({artObject})[0]);
     a.setAttribute('onclick', 'test()');
 }
 
