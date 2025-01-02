@@ -43,7 +43,7 @@
                 echo "<script>
                             artCollectionLoad('$n','$o','$p','$q','$r');
                       </script> 
-                      <div class='gridCell' onclick = 'reverseTest(this, getArtCollection($increment))'>
+                      <div class='gridCell' onclick = 'reverseTest(this, getArtCollection($increment), $increment)'>
                          <img class=icon src='$m'>
                       </div>";
                 $increment += 1;

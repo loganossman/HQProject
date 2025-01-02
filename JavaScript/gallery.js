@@ -22,14 +22,16 @@ let reverseTest = function(a, artObject, name){
     newDiv.appendChild(aboutDate);    
     a.classList.replace("gridCell", "gridAbout");
     a.appendChild(newDiv);
-    console.log(Object.keys({artObject})[0]);
-    a.setAttribute('onclick', 'test()');
+    console.log(name);
+    let newFunc = 'test(' + name + ')';
+    a.setAttribute('onclick', newFunc);
 }
 
-let test = function(){
+let test = function(name){
     sectionToRemove = document.querySelector('.aboutSection');
     sectionToRemove.remove();
     gridToChange = document.querySelector(".gridAbout");
-    gridToChange.classList.replace("gridAbout", "gridCell")
-    gridToChange.setAttribute('onclick', 'reverseTest(this, digitalPiece1)');
+    gridToChange.classList.replace("gridAbout", "gridCell");
+    let newFunc = 'reverseTest(this, getArtCollection(' + name + '), ' + name +')';
+    gridToChange.setAttribute('onclick', newFunc);
 }
