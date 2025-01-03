@@ -6,8 +6,8 @@ function artPiece(name, description, medium, size, date){
     this.date = date;
 }
 
-let bustDescription = " I started this mini series as an assignment for my degree. As time went on, I continued with it during the beginning of covid as a way to bring some joy to myself and others during trying times, and to also experiment with materials unrelated to pencil and paper.";
-let countdownDescription = "I made these pieces as a continuation of making art on the topic of epilepsy. As someone who has epilepsy, and still struggles with it to this day, I created this mini series as a way to in layman's terms “put someone in my shoes”. Even though I am medicated and everything is under control, there is still that lingering feeling that I might have an episode at any time.";
+let bustDescription = "I started this mini series as an assignment for my degree. As time went on, I continued with it during the beginning of covid as a way to bring some joy to myself and others during trying times, and to also experiment with materials unrelated to pencil and paper.";
+let countdownDescription = "I made these pieces as a continuation of making art on the topic of epilepsy. As someone who has epilepsy, and still struggles with it to this day, I created this mini series as a way to in layman\'s terms \"put someone in my shoes\". Even though I am medicated and everything is under control, there is still that lingering feeling that I might have an episode at any time.";
 let colorFigureDescription = " I wanted to explore with color more and work with materials, so these works are just experimentations of movement, color and how to move beyond just black and white.";
 
 let artPiece1 = new artPiece("Bust No. 1", bustDescription, "Acrylic paint on wooden dresser", "18\"x12\"", "2020");
@@ -33,7 +33,7 @@ let artPiece19 = new artPiece("Colored Figures No. 2", colorFigureDescription, "
 let artPiece20 = new artPiece("Colored Figures No. 3", colorFigureDescription, "Charcoal, graphite and ink on paper", "25.5\"x19.5\"", "2024");
 let artPiece21 = new artPiece("Colored Figures No. 4", colorFigureDescription, "Charcoal, graphite and ink on paper", "19.5\"x25.5\"", "2024");
 
-let digitalPiece1 = new artPiece("Brandy", "This piece was one of my first digital works that I was genuinely proud of. I made this for a friend as a commissioned birthday present. This piece helped them bring back a piece of once was lost to them, their good ol’ friend Brandy.", "Charcoal, graphite and ink on paper", "19.5\"x25.5\"", "2024");
+let digitalPiece1 = new artPiece("Brandy", "This piece was one of my first digital works that I was genuinely proud of. I made this for a friend as a commissioned birthday present. This piece helped them bring back a piece of once was lost to them, their good ol\’ friend Brandy.", "Charcoal, graphite and ink on paper", "19.5\"x25.5\"", "2024");
 let digitalPiece2 = new artPiece("Word Portrait-Robin Williams", "None", "Charcoal, graphite and ink on paper", "19.5\"x25.5\"", "2024");
 let digitalPiece3 = new artPiece("Cartoonish Self Portrait", "I always had a fascination with cartoons and drawing in a cartoonish style for as long as I can remember. It reminds me that even though I’m grown, there is still a part of me that reconnects to the child within me. So I continue to draw in a more cartoon/anime stylization when it comes to drawing digitally nowadays.", "Charcoal, graphite and ink on paper", "19.5\"x25.5\"", "2024");
 let digitalPiece4 = new artPiece("Grief and Forgiveness", "None", "Charcoal, graphite and ink on paper", "19.5\"x25.5\"", "2024");

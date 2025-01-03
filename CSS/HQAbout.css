@@ -4,17 +4,57 @@
 }
 
 .AboutPicture{
-    min-height: 60%;
+    min-height: 20%;
     width: 25%;
     max-width: 25%;
-    aspect-ratio: 1/1.2;
 }
 
 .sectionHeader{
     text-align: center;
 }
 
+.summaryContainer{
+    display:flex; 
+    flex-direction: column; 
+    width: 50%;
+}
+
+.experienceContainer{
+    width: 40%;
+}
+
 .aboutPara{
     margin-top: 1rem;
     line-height: 1.75rem;
+}
+
+@media all and (max-width: 700px){
+    .experienceSection{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .experienceSection div{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .experienceContainer{
+        width: 80%;
+    }
+    .summaryContainer{
+        width: 40%;
+    }
+    .AboutPicture{
+        width: 40%;
+        max-width: 40%;
+        height: 180%;
+    }
+    .summarySection{
+        align-items: center;
+    }
+    .sectionHeader{
+        text-wrap: wrap;
+        text-align: left;
+    }
 }
