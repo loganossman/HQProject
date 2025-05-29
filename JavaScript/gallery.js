@@ -1,7 +1,9 @@
+let lastName = "";
+
 let reverseTest = function(a, artObject, name){
     //Code Goes Here... Eventually. Let us cook.
     if(document.querySelector(".aboutSection") != null){
-        test();
+        test(lastName);
     }
     let newDiv = document.createElement("div");
     let aboutHeader = document.createElement("h2");
@@ -23,7 +25,10 @@ let reverseTest = function(a, artObject, name){
     a.classList.replace("gridCell", "gridAbout");
     a.appendChild(newDiv);
     console.log(name);
-    let newFunc = 'test(' + name + ')';
+    console.log("\'" + name + "\'");
+    let nameValue = "\'" + name + "\'";
+    let newFunc = 'test(' + nameValue + ')';
+    lastName = name;
     a.setAttribute('onclick', newFunc);
 }
 
@@ -32,6 +37,7 @@ let test = function(name){
     sectionToRemove.remove();
     gridToChange = document.querySelector(".gridAbout");
     gridToChange.classList.replace("gridAbout", "gridCell");
-    let newFunc = 'reverseTest(this, getArtCollection(' + name + '), ' + name +')';
+    console.log("\'" + name + "\'");
+    let newFunc = 'reverseTest(this, ' + name + ', ' + "\'" +name+ "\'" +')';
     gridToChange.setAttribute('onclick', newFunc);
 }
