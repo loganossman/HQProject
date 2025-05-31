@@ -1,8 +1,16 @@
+label{
+    margin-top: 1rem;
+}
+
 footer{
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
+}
+
+.disclaimer{
+    margin-top: 1rem;
 }
 
 .overrideContainer{

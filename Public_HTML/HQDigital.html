@@ -8,57 +8,60 @@
     <link rel="stylesheet" href="../CSS/HQGallery.css">
 </head>
 <body>
-    <nav>
-        <div>
-            <a href="Index.html"><h1  style="margin-left: 2rem;">HQ</h1></a>
+    <div id = "pageContainer">
+        <div id = "contentWrap">
+            <nav>
+                <div>
+                    <a href="Index.html"><h1  style="margin-left: 2rem;">HQ</h1></a>
+                </div>
+                <p><a href="HQService.html">Works</a></p>
+                <p><a href="HQAbout.html">About</a></p>
+                <p><a href="HQContact.html">Contact</a></p>
+                <img class= "icon" src="../Assets/Icons/4691478_patreon_icon.png">
+                <img class="icon lastIcon" src="../Assets/Icons/instagram_icon.png">
+            </nav>
+            <div  style="text-align: center; margin-top: 2rem;">
+                <h1>
+                    Digital Art Gallery
+                </h1>
+            </div>
+            <div class="digitalGridContainer">
+                <div class="gridCell" onclick = "reverseTest(this, digitalPiece1, 'digitalPiece1')">
+                    <img src="../Assets/DigitalArt/Brandy.jpg">
+                </div>
+                <div class="gridCell" onclick = "reverseTest(this, digitalPiece3, 'digitalPiece3')">
+                    <img src="../Assets/DigitalArt/Cartoonish Self portrait.jpg">
+                </div>
+                <div class="gridCell" onclick = "reverseTest(this, digitalPiece2, 'digitalPiece2')">
+                    <img src="../Assets/DigitalArt/Word Portrait- Robin Williams.jpg">
+                </div>
+                <div class="gridCell" onclick = "reverseTest(this, digitalPiece4, 'digitalPiece4')">
+                    <img src="../Assets/HandMade/Bust No.3.jpg">
+                </div>
+                <div class="gridCell" onclick = "reverseTest(this, digitalPiece5, 'digitalPiece5')">
+                    <img src="../Assets/HandMade/Bust No.4.jpg">
+                </div>
+            </div>
+            <div  style="text-align: center;">
+                <h1>
+                    Video Section
+                </h1>
+            </div>
+            <div style="display: flex; justify-content: center; margin-top: 2rem; margin-bottom: 2rem;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/AvWgyPaVVj4?si=GUOU_IKMU1aUhYC-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div style="display: flex; justify-content: center; margin-bottom: 4rem;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/nGlzC0HKoRo?si=ZRkGeWw-tsIxYKL6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-        <p><a href="HQService.html">Works</a></p>
-        <p><a href="HQAbout.html">About</a></p>
-        <p><a href="HQContact.html">Contact</a></p>
-        <img class= "icon" src="../Assets/Icons/4691478_patreon_icon.png">
-        <img class="icon lastIcon" src="../Assets/Icons/instagram_icon.png">
-    </nav>
-    <div  style="text-align: center; margin-top: 2rem;">
-        <h1>
-            Digital Art Gallery
-        </h1>
-    </div>
-    <div class="digitalGridContainer">
-        <div class="gridCell" onclick = "reverseTest(this, digitalPiece1, 'digitalPiece1')">
-            <img src="../Assets/DigitalArt/Brandy.jpg">
         </div>
-        <div class="gridCell" onclick = "reverseTest(this, digitalPiece3, 'digitalPiece3')">
-            <img src="../Assets/DigitalArt/Cartoonish Self portrait.jpg">
-        </div>
-        <div class="gridCell" onclick = "reverseTest(this, digitalPiece2, 'digitalPiece2')">
-            <img src="../Assets/DigitalArt/Word Portrait- Robin Williams.jpg">
-        </div>
-        <div class="gridCell" onclick = "reverseTest(this, digitalPiece4, 'digitalPiece4')">
-            <img src="../Assets/HandMade/Bust No.3.jpg">
-        </div>
-        <div class="gridCell" onclick = "reverseTest(this, digitalPiece5, 'digitalPiece5')">
-            <img src="../Assets/HandMade/Bust No.4.jpg">
-        </div>
-    </div>
-    <div  style="text-align: center;">
-        <h1>
-            Video Section
-        </h1>
-    </div>
-    <div style="display: flex; justify-content: center; margin-top: 2rem; margin-bottom: 2rem;">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/AvWgyPaVVj4?si=GUOU_IKMU1aUhYC-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-    <div style="display: flex; justify-content: center; margin-bottom: 4rem;">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/nGlzC0HKoRo?si=ZRkGeWw-tsIxYKL6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-
-    <footer class="digitalFooter">
+    <footer id="footer">
         <div class="iconHolder">
             <img class= "icon" src="../Assets/Icons/4691478_patreon_icon.png">
             <a href="https://www.instagram.com/hannahquaydrawings?igsh=azI2bWtoZ2I4M28y"><img class= "icon" src="../Assets//Icons//instagram_icon.png" ></a>
         </div>
         <p>Hannah Quay. All Rights Reserved</p>    
     </footer>
+    </div>
 </body>
 <script src="../JavaScript/gallery.js"></script>
 <script src="../JavaScript/artPiece.js"></script>

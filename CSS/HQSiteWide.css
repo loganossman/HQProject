@@ -261,10 +261,10 @@ to{
 
 @media all and (max-width: 800px){
     h1{
-        font-size: 3.25rem;
+        font-size: 3rem;
     }
     h2{
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
     p{
         font-size: 1rem;
