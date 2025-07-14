@@ -24,8 +24,6 @@ let reverseTest = function(a, artObject, name){
     newDiv.appendChild(aboutDate);    
     a.classList.replace("gridCell", "gridAbout");
     a.appendChild(newDiv);
-    console.log(name);
-    console.log("\'" + name + "\'");
     let nameValue = "\'" + name + "\'";
     let newFunc = 'test(' + nameValue + ')';
     lastName = name;
